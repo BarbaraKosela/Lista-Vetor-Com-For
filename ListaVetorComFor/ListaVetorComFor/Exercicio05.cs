@@ -24,6 +24,8 @@ namespace ListaVetorComFor
                 unidades[i] = Convert.ToInt32(Console.ReadLine());
             }
 
+            Console.Clear();
+
             Console.WriteLine("\n\nJogos cadastrados para estoque: ");
             for (int i = 0; i < jogos.Length; i++)
             {
