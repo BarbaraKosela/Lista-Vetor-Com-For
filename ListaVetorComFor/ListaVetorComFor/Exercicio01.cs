@@ -17,5 +17,6 @@ namespace ListaVetorComFor
                 nomes[i] = Console.ReadLine();
             }
         }
+
     }
 }
