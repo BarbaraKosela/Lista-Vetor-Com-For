@@ -9,14 +9,16 @@ namespace ListaVetorComFor
     {
         public Exercicio06()
         {
+            
             int[] numeros = new int[10];
             int numerosPares = 0, numerosPositivos = 0, numerosImpares = 0, numerosNegativos = 0, numerosNeutros = 0;
             
 
             for (int i = 0; i < numeros.Length; i++)
             {
-                Console.WriteLine("Digite um número aleatório: ");
-                numeros[i] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Digite o número: ");
+                Random gerarAleatorio = new Random();
+                numeros[i] = gerarAleatorio.Next(0, 52);
             }
 
             Console.Clear();
