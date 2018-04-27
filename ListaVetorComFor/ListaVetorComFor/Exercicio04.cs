@@ -9,7 +9,7 @@ namespace ListaVetorComFor
     {
         public Exercicio04()
         {
-            string[] tamanho = new string[4];
+            string[] tamanho = new string[40];
             int camisetasPP = 0, camisetasP = 0, camisetasM = 0, camisetasG = 0, camisetasGG = 0, camisetasXG = 0, camisetasXGG = 0;
 
             for (int i = 0; i < tamanho.Length; i++)
@@ -32,38 +32,56 @@ namespace ListaVetorComFor
                 {
                     camisetasPP = camisetasPP + 1;
                 }
+            }
 
-                else if (tamanho[i] == "p")
+            for (int i = 0; i < tamanho.Length; i++)
+			{
+			 
+			
+                if (tamanho[i] == "p")
                 {
                     camisetasP = camisetasP + 1;
                 }
 
-                else if (tamanho[i] == "m")
+            }
+
+            for (int i = 0; i < tamanho.Length; i++)
+			{
+                if (tamanho[i] == "m")
                 {
                     camisetasM = camisetasM + 1;
                 }
-
-                else if (tamanho[i] == "g")
+            }
+            for (int i = 0; i < tamanho.Length; i++)
+			{
+                if (tamanho[i] == "g")
                 {
                     camisetasG = camisetasG + 1;
                 }
-
-                else if (tamanho[i] == "gg")
+            }
+            for (int i = 0; i < tamanho.Length; i++)
+            {
+                if (tamanho[i] == "gg")
                 {
                     camisetasGG = camisetasGG + 1;
                 }
-
-                else if (tamanho[i] == "xg")
+            }
+            for (int i = 0; i < tamanho.Length; i++)
+            {
+                if (tamanho[i] == "xg")
                 {
                     camisetasXG = camisetasXG + 1;
                 }
-
-                else if (tamanho[i] == "xgg")
+            }
+            for (int i = 0; i < tamanho.Length; i++)
+			{
+                if (tamanho[i] == "xgg")
                 {
                     camisetasXGG = camisetasXGG + 1;
                 }
+            }
                
-			}
+			
 
             
 
