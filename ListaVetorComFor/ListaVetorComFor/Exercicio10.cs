@@ -9,9 +9,9 @@ namespace ListaVetorComFor
     {
         public Exercicio10()
         {
-            string[] nomes = new string[10];
-            int quantidadeNomesS = 0, quantidadeNomesA = 0, quantidadeSilva = 0, silva = 0;
-            string nome = "";
+            string[] nomes = new string[3];
+            int quantidadeNomesS = 0, quantidadeNomesA = 0, quantidadeSilva = 0;
+            string nome = "" , silva = "";
            
 
 
@@ -80,8 +80,18 @@ namespace ListaVetorComFor
             }
 
             
-            
-           
+            for (int i = 0; i < nomes.Length; i++)
+            {
+                quantidadeSilva = nomes[i].Length - 5;
+                silva = nomes[i].Substring(quantidadeSilva, 5);
+
+                if (silva == "silva")
+                {
+                    quantidadeSilva = quantidadeSilva + 1;
+                }
+
+ 
+            }
 
 
 
@@ -90,7 +100,7 @@ namespace ListaVetorComFor
             Console.WriteLine("Menor nome: " + menorNome);
             Console.WriteLine("Quantidade de pessoas com a inicial S: " + quantidadeNomesS);
             Console.WriteLine("Quantidade de pessoas com a inicial A: " + quantidadeNomesA);
-
+            Console.WriteLine("Quantidade de pessoas com o sobrenome silva: " + quantidadeSilva);
 
 
 

@@ -22,7 +22,7 @@ namespace ListaVetorComFor
             for (int i = 0; i < nomes.Length; i++)
             {
                 
-                Console.Write(nomes[i] + ", " + nomes[i] + "e ");
+                Console.Write(nomes[i] + ", ");
             }
         }
     }

@@ -11,36 +11,81 @@ namespace ListaVetorComFor
         {
 
 
-            string caracteres;
-            int i, cv;
-            char[] vogais = { 'a', 'i', 'u', 'e', 'o' };
-            int total = 0;
-            
-            Console.Write("Digite o caracter: ");
-            caracteres = Console.ReadLine();
+            string[] caracteres = new string[5];
+            int quantidadeVogais = 0, quantidadeConsoantes = 0, quantidadeEspeciais = 0;
 
-            for (i = 0; i <= caracteres.Length - 1; i++)
+            for (int i = 0; i < caracteres.Length; i++)
             {
-                for (cv = 0; cv <= 4; cv++)
-                {
-                
-                    if (Convert.ToChar(caracteres.Substring(i, 1)) == vogais[cv])
+                Console.WriteLine("Digite o caractere: ");
+                caracteres[i] = Console.ReadLine();
+                Console.WriteLine(" ");
+            }
 
-                    {
-                        total++;
-                    }
+            
+            for (int i = 0; i < caracteres.Length; i++)
+            {
+                if ((caracteres[i] == "a")||(caracteres[i] == "e")||(caracteres[i] == "i")||(caracteres[i] == "o")||(caracteres[i] == "u"))
+                {
+                    quantidadeVogais = quantidadeVogais + 1;
                 }
 
+                else if ((caracteres[i] == "b")||(caracteres[i] == "c")||(caracteres[i] == "d")||(caracteres[i] == "f")||(caracteres[i] == "g")||(caracteres[i] == "h")||(caracteres[i] == "j")||(caracteres[i] == "k")
+                    ||(caracteres[i] == "l")||(caracteres[i] == "m")||(caracteres[i] == "n")||(caracteres[i] == "o")||(caracteres[i] == "p")||(caracteres[i] == "q")||(caracteres[i] == "r")||(caracteres[i] == "s")
+                    ||(caracteres[i] == "t")||(caracteres[i] == "v")||(caracteres[i] == "w")||(caracteres[i] == "x")||(caracteres[i] == "y")||(caracteres[i] == "z"))
+                {
+                    quantidadeConsoantes = quantidadeConsoantes + 1;
+                }
 
-                Console.Write("\nTotal: " + total);
+                else
+                {
+                    quantidadeEspeciais = quantidadeEspeciais + 1;
+                }
+                
                 
             }
 
 
+            Console.WriteLine("\nQuantidade de consoantes: " + quantidadeConsoantes);
+            Console.WriteLine("\nQuantidade de vogais: " + quantidadeVogais);
+            Console.WriteLine("\nQuantidade de caracteres especiais: " + quantidadeEspeciais);
+            
+            
 
-             }
+            for (int i = 0; i < caracteres.Length; i++)
+            {
+                if ((caracteres[i] == "b") || (caracteres[i] == "c") || (caracteres[i] == "d") || (caracteres[i] == "f") || (caracteres[i] == "g") || (caracteres[i] == "h") || (caracteres[i] == "j") || (caracteres[i] == "k")
+                    || (caracteres[i] == "l") || (caracteres[i] == "m") || (caracteres[i] == "n") || (caracteres[i] == "o") || (caracteres[i] == "p") || (caracteres[i] == "q") || (caracteres[i] == "r") || (caracteres[i] == "s")
+                    || (caracteres[i] == "t") || (caracteres[i] == "v") || (caracteres[i] == "w") || (caracteres[i] == "x") || (caracteres[i] == "y") || (caracteres[i] == "z"))
+                {
+                    Console.WriteLine("\nAs consoantes: ");
+                    Console.WriteLine(" " + caracteres[i]);
+                    
+                }
 
+                
+                
+                else if ((caracteres[i] == "a") || (caracteres[i] == "e") || (caracteres[i] == "i") || (caracteres[i] == "o") || (caracteres[i] == "u"))
+                   
+
+                {
+                        Console.WriteLine("\nAs vogais: ");
+                        Console.WriteLine(" " + caracteres[i]);
+                        
+                    
+                }
+
+                else
+                {
+                    Console.WriteLine("\nOs caracteres especiais: ");
+                    Console.WriteLine(" " + caracteres[i]);
+                }
+                
+            }
+
+
+            
 
         }
     }
+}
 
