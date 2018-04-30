@@ -38,23 +38,7 @@ namespace ListaVetorComFor
 
 
 
-
-            
-        
-
-
-             
-
-            
-
-
-
-
-
              }
-
-
-
 
 
         }
