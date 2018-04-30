@@ -11,7 +11,7 @@ namespace ListaVetorComFor
         {
 
 
-            string[] caracteres = new string[5];
+            string[] caracteres = new string[20];
             int quantidadeVogais = 0, quantidadeConsoantes = 0, quantidadeEspeciais = 0;
             
 
@@ -29,7 +29,7 @@ namespace ListaVetorComFor
                 {
                     quantidadeVogais = quantidadeVogais + 1;
                     Console.WriteLine("Vogais: " + caracteres[i]);
-                    Console.WriteLine(" ");
+                    
                 }
 
                 else if ((caracteres[i] == "b")||(caracteres[i] == "c")||(caracteres[i] == "d")||(caracteres[i] == "f")||(caracteres[i] == "g")||(caracteres[i] == "h")||(caracteres[i] == "j")||(caracteres[i] == "k")
@@ -38,14 +38,15 @@ namespace ListaVetorComFor
                 {
                     quantidadeConsoantes = quantidadeConsoantes + 1;
                     Console.WriteLine("Consoantes: " + caracteres[i]);
-                    Console.WriteLine(" ");
+
+                    
                 }
 
                 else
                 {
                     quantidadeEspeciais = quantidadeEspeciais + 1;
                     Console.WriteLine("Caracteres especiais: " + caracteres[i]);
-                    Console.WriteLine(" ");
+                    
 
                 }
                 

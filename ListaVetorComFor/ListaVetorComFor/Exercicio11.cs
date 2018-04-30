@@ -13,17 +13,20 @@ namespace ListaVetorComFor
 
             for (int i = 0; i < nomes.Length; i++)
             {
-                Console.WriteLine("Nome: ");
+                Console.Write("Nome: ");
                 nomes[i] = Console.ReadLine();
             }
 
-            Console.WriteLine("nomes: ");
+            Console.WriteLine("\nNomes: ");
 
             for (int i = 0; i < nomes.Length; i++)
             {
                 
-                Console.Write(nomes[i] + ", ");
+                Console.Write(nomes[i] + ", " + nomes[3] + "e ");
             }
+           
+            
+            
         }
     }
 }
